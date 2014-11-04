@@ -31,13 +31,13 @@ function fixCss(){
     $("body").css("font-family", "'helvetica neue', arial, sans-serif");
 }
 
-function colorPage(colorName){
-    $("body").css("background-color", colorName);
-}
-
 function highlightStatus(){
     var errorIcons = $("img[src*='error']");
-    colorPage(errorIcons.length > 0 ? "red" : "green");
+    if (errorIcons.length > 0){
+	$("body").css("background-color", "red").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-red.jpg')");
+    } else {
+	$("body").css("background-color", "green").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-green.jpg')");
+    }
 }
  
 function render(data){
