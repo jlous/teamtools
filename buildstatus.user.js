@@ -20,7 +20,8 @@ function fixCss(){
        href: "https://code.barentswatch.net/tc/css/status/externalStatus.css"
     }).appendTo("head");
     $("<style type='text/css'>" +
-      "  .tcTable{background: rgba(255, 255, 255, 0.7)} " +
+      "  body {font-size: 200%;}" +
+      "  .tcTable{background: rgba(255, 255, 255, 0.7);} " +
       "  table.tcTable a{color:white;}" +
       "  div.teamCityBuildNumber{display: inline;}" +
       "  div.teamCityDateTime{display: inline;}" +
@@ -49,14 +50,23 @@ function render(data){
 
 function refresh(){
     $.get("/tc/externalStatus.html", render);
+    setTimeout(refresh, 10000);
 }
 
+var refreshInterval;
+
 function scheduleRefresh(){
-    setInterval(refresh, 10000);
+    refreshInterval = setInterval(refresh, 10000);
+}
+
+function pauseRefresh(){
+    clearInterval(refreshInterval);
+    alert("Autooppdatering stanset.  Last på nytt for å starte igjen.");
 }
 
 function addTimeStamp(){
-	$("table").append("<tr><td><small>Sist oppdatert " + new Date().toLocaleString() + "</small></td></tr>");
+	$("table").append("<tr><td id='timestamp'><small>Sist oppdatert " + new Date().toLocaleString() + "</small></td></tr>");
+    $("#timestamp").click(pauseRefresh);
 }
 
 fixCss();
