@@ -24,6 +24,7 @@ function fixCss(){
       "  table.tcTable a{color:white;}" +
       "  div.teamCityBuildNumber{display: inline;}" +
       "  div.teamCityDateTime{display: inline;}" +
+      "  table.tcTable {border: 0px}"+
       "  table.tcTable td.buildNumberDate div.teamCityDateTime{color:black;}" +
       "</style>"
      ).appendTo("head");
@@ -34,9 +35,9 @@ function fixCss(){
 function highlightStatus(){
     var errorIcons = $("img[src*='error']");
     if (errorIcons.length > 0){
-	$("body").css("background-color", "red").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-red.jpg')");
+		$("body").css("background-color", "red").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-red.jpg')");
     } else {
-	$("body").css("background-color", "green").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-green.jpg')");
+		$("body").css("background-color", "gray").css("background-image", "url('https://raw.githubusercontent.com/jlous/teamtools/master/background-green.jpg')");
     }
 }
  
