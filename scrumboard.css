@@ -1,0 +1,22 @@
+/*
+@match       .*RapidBoard.jspa.*
+*/
+
+/* Swimlane */
+
+.ghx-swimlane {
+    background-color: #777;
+    margin-top: 1ex;
+    padding-bottom: 1ex;
+}
+.ghx-swimlane-header:after{
+    content:none;
+}
+.ghx-swimlane-header.ghx-selected{
+    background-color: inherit;
+    font-weight:bold;
+}
+.ghx-swimlane-header.ghx-selected .ghx-bandaid{
+    background: none;
+    box-shadow: none;
+}
