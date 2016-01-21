@@ -1,4 +1,3 @@
-@-moz-document regexp(".*RapidBoard.jspa.*") {
 /* page */
 #ghx-pool{
 	background-color: #999;
@@ -22,12 +21,13 @@
 .ghx-header-compact #ghx-controls .aui-button{
     position: fixed;
     z-index: 100;
-    top:0;
-    right: 20px;
+    top: 0;
+    right: 24px;
     bottom: auto;
 	padding: 0 0;
-    height: auto;
-    opacity: 1;
+    height: 16px;
+    background: transparent;
+    border:0;
 }
 
 
@@ -69,7 +69,7 @@
 }
 
 .ghx-swimlane-header .ghx-heading{
-	margin: 0.5em 0em;
+	margin: 0.3em 0 0.2em 0;
 }
 
 .ghx-swimlane-header a{
@@ -81,7 +81,9 @@
 }
 .ghx-swimlane-header.ghx-selected{
     background-color: transparent;
-    font-weight:bold;
+}
+.ghx-swimlane-header.ghx-selected .ghx-heading{
+    text-decoration: underline;
 }
 .ghx-swimlane-header .aui-lozenge{
 	display: none;
@@ -89,18 +91,9 @@
 .ghx-swimlane-header .ghx-description{
 	display: none;
 }
-.ghx-swimlane-header .ghx-bandaid,
-.ghx-swimlane-header.ghx-selected .ghx-bandaid{
-    background: none;
-    box-shadow: none;
-    padding-right: 0px;
-    padding-top: 0em;
-}
-.ghx-bandaid .aui-button{
-	opacity: 0.7;
-    border-radius: 2px;
-    padding: 0px 0.5em;
-    height: auto;
+
+.ghx-bandaid {
+	display: none;
 }
 
 .ghx-column-headers .ghx-column, .ghx-columns .ghx-column{
@@ -131,8 +124,8 @@
 	font-weight: bold;
 }
 .ghx-issue .ghx-avatar{
-	top: 0.4em;
-    right: 0.4em;
+	top: 0.3em;
+    right: 0.3em;
 }
 
 /* Issue noise */
@@ -144,5 +137,4 @@
 }
 .ghx-grabber{
 	display:none;
-}
 }
