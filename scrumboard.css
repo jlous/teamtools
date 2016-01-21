@@ -5,17 +5,49 @@
 }
 
 
-/* Column headers */
+/* Page headers */
 
+.ghx-header-compact #ghx-operations{
+	padding-top: 0;
+}
+
+.ghx-header-compact .ghx-controls-work {
+    min-height: 0px;
+}
+.ghx-header-compact .ghx-controls-work .ghx-controls-filters{
+    display:none;
+}
+
+
+.ghx-header-compact #ghx-controls .aui-button{
+    position: fixed;
+    z-index: 100;
+    top:0;
+    right: 20px;
+    bottom: auto;
+	padding: 0 0;
+    height: auto;
+    opacity: 1;
+}
+
+
+/* Column headers */
 #ghx-column-header-group.ghx-fixed{
 	background-color: transparent;
 }
 #ghx-column-headers{
+    top: 0px !important;
     background-color: #999;
+    padding-top: 0px;
 }
 .ghx-column-headers .ghx-column{
 	border-bottom:none;
-    padding: 0.5em 0px;
+    padding: 0px;
+   	text-align: center;
+}
+.ghx-column-headers h2{
+	color: #ddd;
+    font-weight: bold;
 }
 
 
