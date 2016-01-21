@@ -1,3 +1,4 @@
+@-moz-document regexp(".*RapidBoard.jspa.*") {
 /* page */
 #ghx-pool{
 	background-color: #999;
@@ -137,4 +138,5 @@
 }
 .ghx-grabber{
 	display:none;
+}
 }
