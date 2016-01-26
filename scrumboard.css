@@ -58,7 +58,7 @@
 .ghx-swimlane {
     background-color: #555;
     margin-bottom: 2px;
-    padding-bottom: 1ex;
+    padding: 0.5em 0;
     border-radius:0.6em;
     box-shadow:
         0.2em 0.2em 0.4em rgba(0,0,0,0.2) inset;
@@ -70,7 +70,8 @@
 }
 
 .ghx-swimlane-header .ghx-heading{
-	margin: 0.3em 0 0.2em 0;
+	margin: 0 0 0.2em 0;
+    line-height: 1;
 }
 
 .ghx-swimlane-header a{
@@ -91,6 +92,9 @@
 }
 .ghx-swimlane-header .ghx-description{
 	display: none;
+}
+.ghx-swimlane-header .ghx-expander .ghx-iconfont{
+	margin: 2px 0 0 -2px;
 }
 
 .ghx-bandaid {
@@ -113,7 +117,7 @@
 .ghx-issue{
     border: 0px;
     border-radius: 0.3em;
-    margin-bottom: 3px;
+    margin: 2px 0;
     box-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.3);
     line-height: 1.2;
 }
@@ -138,5 +142,12 @@
 }
 .ghx-grabber{
 	display:none;
+}
+.ghx-issue .aui-label{
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+.ghx-issue .ghx-end{
+    right: 0.3em;
+    bottom: 4px;
 }
 }
