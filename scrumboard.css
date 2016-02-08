@@ -93,7 +93,8 @@
 .ghx-swimlane-header .ghx-description{
 	display: none;
 }
-.ghx-swimlane-header .ghx-expander .ghx-iconfont{
+.ghx-swimlane-header .ghx-expander .ghx-iconfont,
+.ghx-swimlane.ghx-closed .ghx-swimlane-header .ghx-expander .ghx-iconfont{
 	margin: 2px 0 0 -2px;
 }
 
