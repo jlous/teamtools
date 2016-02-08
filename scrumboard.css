@@ -116,21 +116,31 @@
 
 .ghx-issue{
     border: 0px;
-    border-radius: 0.3em;
+    border-radius: 8px;
     margin: 2px 0;
     box-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.3);
     line-height: 1.2;
+    overflow: hidden;
 }
 .ghx-issue .ghx-issue-content{
-    min-height: 2em;
-    padding: 0.3em 0.5em;
+    min-height: 38px;
+    padding: 5px 0.5em;
 }
 .ghx-issue .ghx-key{
 	font-weight: bold;
 }
 .ghx-issue .ghx-avatar{
-	top: 0.3em;
-    right: 0.3em;
+	top: 0px;
+    right: 0px;
+    height:100%;
+}
+
+.ghx-avatar-img{
+    height: 48px;
+    width: 48px;
+    border-radius: 0px;
+    font-size:40px;
+    line-height: 45px;
 }
 
 /* Issue noise */
@@ -149,5 +159,8 @@
 .ghx-issue .ghx-end{
     right: 0.3em;
     bottom: 4px;
+}
+.ghx-issue .ghx-extra-fields{
+    display: none;
 }
 }
