@@ -157,8 +157,7 @@
     color: rgba(255, 255, 255, 0.4) !important;
 }
 .ghx-issue .ghx-end{
-    right: 0.3em;
-    bottom: 4px;
+	display:none;
 }
 .ghx-issue .ghx-extra-fields{
     display: none;
