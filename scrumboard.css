@@ -144,6 +144,11 @@
     line-height: 45px;
 }
 
+.ghx-days {
+    position: absolute;
+    bottom: 0px;
+}
+
 /* Issue noise */
 .ghx-type{
 	display:none;
