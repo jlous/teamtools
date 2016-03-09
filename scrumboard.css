@@ -88,7 +88,12 @@
     text-decoration: underline;
 }
 .ghx-swimlane-header .aui-lozenge{
-	display: none;
+	float:right;
+    background: none !important;
+    border: none !important;
+    color: silver !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .ghx-swimlane-header .ghx-description{
 	display: none;
