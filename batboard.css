@@ -1,11 +1,23 @@
 @-moz-document regexp(".*RapidBoard.jspa\\?rapidView=2789.*") {
     /* page */
+    #gh{
+        background-color: #0E0E0C;
+    }
+
     #ghx-pool{
         background-color: #0E0E0C;
     }
 
 
     /* Page headers */
+
+    #subnav-trigger-work{
+        color: #FFD710;
+    }
+
+    #ghx-work{
+        border-top: 0px;
+    }
 
     .ghx-header-compact #ghx-operations{
         padding-top: 0;
@@ -29,6 +41,18 @@
         height: 16px;
         background: transparent;
         border:0;
+    }
+
+    /* Detail */
+
+    .ghx-detail-contents{
+        background: #A7A2A8;
+    }
+    .ghx-detail-section .ghx-header h3{
+        background: #A7A2A8;
+    }
+    .ghx-fa{
+        color: #777;
     }
 
 
@@ -75,7 +99,7 @@
     }
 
     .ghx-swimlane-header a{
-        color: #02437D;
+        color:  #FFD710;
     }
 
     .ghx-swimlane-header:after{
