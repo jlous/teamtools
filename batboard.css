@@ -1,13 +1,84 @@
 @-moz-document regexp(".*RapidBoard.jspa\\?rapidView=2789.*") {
+
     /* page */
     #gh{
-        background-color: #0E0E0C;
+        background-color: #000;
     }
 
     #ghx-pool{
-        background-color: #0E0E0C;
+        background-color: #000;
     }
 
+    /* sidebars */
+    .aui-sidebar .aui-sidebar-wrapper, .aui-sidebar-submenu .aui-sidebar-wrapper{
+        background-color: #000;
+    }
+
+    .aui-nav-item .aui-icon{
+        -webkit-filter: brightness(200%);
+    }
+
+    .aui-sidebar .aui-sidebar-wrapper, .aui-sidebar-submenu .aui-sidebar-wrapper{
+        border: none;
+    }
+
+    .aui-sidebar[aria-expanded="false"] .aui-sidebar-group.aui-sidebar-group-actions~.aui-sidebar-group-tier-one{
+        border: none;
+    }
+    .aui-sidebar .aui-sidebar-footer, .aui-sidebar-submenu .aui-sidebar-footer{
+        border: none;
+    }
+
+    .aui-sidebar[aria-expanded="false"] .aui-sidebar-group.aui-sidebar-group-actions:after, .aui-sidebar-submenu[aria-expanded="false"] .aui-sidebar-group.aui-sidebar-group-actions:after{
+        border: 1px solid #777;
+    }
+
+    .aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected a{
+        background: #205081;
+    }
+
+    .aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected .aui-icon{
+        -webkit-filter: brightness(400%);
+    }
+
+    /* Detail */
+
+    .ghx-detail-contents{
+        background: black;
+    }
+    .ghx-detail-section .ghx-header h3{
+        background: black;
+    }
+    .ghx-fa{
+        color: #777;
+    }
+
+    .ghx-detail-nav-item.ghx-selected{
+        background: #205081;
+    }
+    .ghx-detail-nav-item.ghx-selected .aui-icon{
+        -webkit-filter: brightness(200%);
+    }
+
+
+    .ghx-detail-issue, .ghx-detail-section .ghx-header h3{
+        color: #6E6D75;
+    }
+
+    .ghx-detail-section .ghx-header{
+        background: 0;
+        border-top: 1px solid #555;
+        padding-top: 5px;
+    }
+
+    .ghx-detail-head .ghx-project-avatar{
+        border: none;
+    }
+
+    .aui-button, a.aui-button, .aui-button:visited{
+        background: #aaa;
+        border-color: #aaa;
+    }
 
     /* Page headers */
 
@@ -43,17 +114,6 @@
         border:0;
     }
 
-    /* Detail */
-
-    .ghx-detail-contents{
-        background: #A7A2A8;
-    }
-    .ghx-detail-section .ghx-header h3{
-        background: #A7A2A8;
-    }
-    .ghx-fa{
-        color: #777;
-    }
 
 
     /* Column headers */
