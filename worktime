@@ -1,0 +1,77 @@
+@-moz-document url("https://worktime.soprasteria.com/") {
+/* Bort med horisontale skillelinjer i tabell */
+.activity-grid-row {
+    border-bottom: none;
+}    
+
+/* Nye farge på sebrastriper */
+.activity-grid-row{
+    background-color: #fff;
+}
+.activity-grid-row:nth-of-type(odd) {
+    background-color: #f0f0ff;
+}  
+
+/* Bort med fokusfarger */
+.activity-grid-row.selected {
+    background-color: #fff!important;
+}
+.activity-grid-row:nth-of-type(odd).selected {
+    background-color: #f0f0ff!important;
+}  
+.activity-grid-row ion-col.selected {
+    background-color: inherit!important;
+}
+
+/* Regneark-celler */ 
+.activity-grid-row .time-entry-input input{
+    background: none;
+    height:100%;
+    text-align:right;
+    border:1px solid silver;
+}
+.activity-grid-row .time-entry-input{
+    background: none;
+    border: none!important;
+    margin: 0!important;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    float: none;
+}
+div.time-entry{
+    margin: 0!important;
+    padding: 0!important;
+}
+page-welcome-web .summaryhours-forday-col{
+    margin: 0!important;
+}
+
+/* Cellestørrelser */
+[col-4]{
+	max-width: 4em!important;
+}
+
+/*
+Backlog:
+- inline kommentarindikator
+- bort med cellemarger
+- vertikale streker
+- usynlig inputfelt (linje, bakgrunn, skygge)
+- tekster på en linje
+- vertical overhead
+- farger
+  - zebrastriper
+  - fridager
+  - footer
+  - fleksitid
+
+Done:
+- bort med horisontale streker
+
+
+Script:
+- flytt "new task" til tabell
+
+*/
+}
