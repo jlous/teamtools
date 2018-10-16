@@ -1,0 +1,111 @@
+@-moz-document regexp(".*RapidBoard.jspa.*") {
+.ghx-pool{
+	padding-top:50px;
+}
+
+#ghx-column-headers{
+    padding-top: 0;
+}
+.ghx-column-headers .ghx-column{
+    border: none;
+    text-align: center;
+    padding-bottom: 0;
+}
+.ghx-column-headers .ghx-column h2{
+    font-weight: bold !important;
+}
+
+.ghx-swimlane{
+    background: #f5f5f5;
+    padding-bottom: 4px; 
+    margin-bottom: 8px;
+}
+#js-swimlane-header-stalker{
+    background: #f5f5f5;
+}
+.ghx-columns .ghx-column {
+    background: none;
+}
+
+
+.ghx-swimlane-header {
+    margin-left: 5px;
+}
+.ghx-swimlane-header .ghx-heading, .ghx-swimlane-header .ghx-expander .ghx-iconfont {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ghx-swimlane-header:after{
+    content: none;
+}
+
+.ghx-issue {
+    border:none;
+    box-shadow: 3px 3px 10px -3px rgba(0,0,0, 0.2);
+    margin-bottom: 6px;
+}
+.ghx-issue .ghx-issue-content {
+    min-height: 55px;
+    padding: 5px 5px 5px 28px;
+}
+
+.ghx-issue-fields .ghx-summary .ghx-inner {
+    max-height: 5em;
+}
+
+.ghx-issue .ghx-type{
+    left: 9px;
+    top: 5px;
+}
+.ghx-issue .ghx-flags{
+    top: 25px;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+.ghx-issue .ghx-flags img{
+	margin-left: -1px;
+    margin-top: -1px;
+}
+
+.ghx-issue .ghx-highlighted-fields {
+    margin-top: 8px;
+    padding-right:0;
+}
+.ghx-issue .ghx-highlighted-fields .ghx-highlighted-field {
+	max-width: 100%;
+    opacity: 0.5;
+}
+
+.ghx-issue .ghx-avatar {
+    right: 1px;
+    top: 1px;
+}
+.ghx-issue.ghx-has-avatar .ghx-issue-fields, .ghx-issue.ghx-has-corner .ghx-issue-fields {
+    padding-right: 0px;
+}
+.ghx-issue .ghx-end{
+    right: auto !important;
+    bottom: auto;
+    left: 0px;
+    top: 42px;
+    box-shadow: none !important;
+}
+.ghx-issue .ghx-corner {
+    text-align: right;
+}
+
+.aui-badge{
+    background: none;
+    padding: 0;
+    font-size:13px;
+}
+
+/*bonus*/
+.ghx-backlog .stuck{
+    width: auto !important;
+    left:0 !important;
+    right:16px !important;
+}
+}
