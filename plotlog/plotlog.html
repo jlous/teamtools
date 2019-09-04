@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plotlog</title>
+  <style type="text/css">
+    body {
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      background-image:
+      linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee),
+      linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee);
+      font-family: Verdana, sans-serif;
+    }
+    #file-content{
+      font-family: "Liberation sans narrow", sans-serif;
+      font-size: 3px;
+    }
+    div{
+      white-space: nowrap;
+    }
+    div div:hover{
+      background: lightpink;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Log plotter</h1>
+  <input id="file-input" type="file" />
+  <label>Text size<input id="text-size" type="range" value="3" min="1" max="16"></label>
+  <div id="file-content"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="plotlog.js"></script>
+</html>
