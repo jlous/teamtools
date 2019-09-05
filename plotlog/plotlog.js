@@ -11,18 +11,29 @@ function readSingleFile(e) {
 }
 
 function render(logfile) {
-    let indent = 0;
     let startTime;
+    let indent = 0;
     const lines = logfile.split('\n').map(line => {
-        const found = line.match(/^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d,\d\d\dZ/);
-        if (found){
-            const time = Date.parse(found[0].replace(',','.'));
-            startTime = startTime || time;
-            indent = (time-startTime)/100;
+        const timestamp = line.match(/^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d,\d\d\dZ/);
+        if (timestamp){
+            const logTime = Date.parse(timestamp[0].replace(',','.'));
+            startTime = startTime || logTime;
+            indent = (logTime-startTime)/100;
         }
-        return `<div style="padding-left: ${indent}px">${line}</div>`;
+        let classes = ['logline'];
+        let prefix = '';
+        let postfix = '';
+        if (line.startsWith('[INFO] Running ')){
+            classes.push('test-start');
+            prefix = '<div class="test">';
+        }
+        if (line.includes('] Tests run: ')){
+            classes.push('test-end');
+            postfix = '</div>';
+        }
+        return `${prefix}<div style="padding-left: ${indent}px" class="${classes.join(' ')}">${line}</div>${postfix}`;
     });
-    $("#file-content").html(lines.join('\n'));
+    $("#logCanvas").html(lines.join('\n'));
 }
 
 $("#file-input").change(function(e) {
@@ -30,5 +41,9 @@ $("#file-input").change(function(e) {
 });
 
 $("#text-size").change(function() {
-    $('#file-content').css("font-size", $(this).val()+"px");
+    $('#logCanvas').css("font-size", $(this).val()+"px");
+});
+
+$(document).on('mousemove', function(e){
+    $('#ruler').offset({left: e.pageX-5});
 });
