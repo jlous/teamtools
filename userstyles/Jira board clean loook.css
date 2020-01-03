@@ -1,4 +1,20 @@
 @-moz-document regexp(".*RapidBoard.jspa.*") {
+    #ghx-header{
+        padding-top: 3px;
+        padding-bottom: 0;
+    }
+    #ghx-board-name{
+        padding-bottom: 0;
+    }
+
+
+    .ghx-controls-work{
+        min-height:35px;
+    }
+    .ghx-quick-content.aui-expander-content{
+        margin-bottom: 0;
+    }
+
     .ghx-column-headers .ghx-column{
         border: none;
         text-align: center;
@@ -12,26 +28,30 @@
 
     .ghx-columns{
         background: #f5f5f5;
-        box-shadow: inset 1px 1px 7px -1px rgba(0,0,0, 0.2);
-
+        box-shadow: inset 1px 1px 7px -1px rgba(0,0,0, 0.1);
+        padding: 0px;
     }
 
     .ghx-swimlane-header {
         top: 14px !important;
+        padding-left: 0 !important;
     }
     .ghx-swimlane-header .ghx-heading, .ghx-swimlane-header .ghx-expander .ghx-iconfont {
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
+    }
+    .ghx-heading-expander {
+        left: 2px;
     }
 
 
     .ghx-issue {
-        box-shadow: 2px 2px 5px 0 rgba(0,0,0, 0.2);
+        margin: 8px;
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.1);
         padding: 0 2px 2px 25px;
     }
     .ghx-issue-content{
-        max-height: 100px;
-        min-height: 73px !important;
+        min-height: 54px !important;
         display: flex;
         flex-direction: column;
     }
@@ -43,16 +63,7 @@
         max-height: 57px !important;
     }
     .ghx-highlighted-fields{
-        margin: 2px 0 0 0 !important;
-        padding: 0 !important;
-        bottom: 2px;
-        left: 5px
-    }
-    .ghx-highlighted-field{
-        margin: 0 !important;
-    }
-    .aui-label{
-        margin: 0 !important;
+        display: none;
     }
 
 
