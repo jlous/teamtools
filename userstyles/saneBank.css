@@ -1,0 +1,44 @@
+@-moz-document url-prefix("http://tidbank/") {
+    .pulse { animation-name: none;}
+    .cellWeek {
+        padding: 0 !important;
+    }
+    .rgMasterTable{
+
+        min-width: 0 !important;
+    }
+    .rgMasterTable tr {
+        height: auto !important;
+    }
+    .rgMasterTable .cellWeek {
+        padding-right: 0.5ex !important;
+        text-align: right !important;
+    }
+    .rgMasterTable .orangeBack1 .cellWeek {
+        padding-right: 0 !important;
+    }
+    .rgMasterTable input.riTextBox{
+        border:none !important;
+        border-radius: 0;
+        padding-right: 0.5ex !important;
+        padding-left: 0 !important;
+        text-align: right !important;
+    }
+    .rgMasterTable .rcbInner {
+        border:none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+    .rcbInner, .rcbActionButton, .riTextBox {
+        padding-bottom: 1px !important;
+    }
+    .rgMasterTable button {
+        border:none !important;
+        border-radius: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .riFocused{
+        box-shadow: inset 0 0 0 2px rgba(200,200,256,0.75) !important;
+    }
+}
