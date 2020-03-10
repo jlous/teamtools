@@ -1,7 +1,12 @@
 @-moz-document url-prefix("http://tidbank/") {
     /*
+
     saneBANK.css
-    Et stilark for tidBank som får hele fordelingsbildet inn på en normal skjerm, og generelt svir litt mindre i øya
+
+    Et stilark for tidBANK som svir litt mindre i øya:
+     * får hele fordelingstabellen inn på én normal skjerm
+     * flatt regneark-utseende på fordelingstabellen
+     * ingen pulserende notifications
 
     INSTALL
     Bruk f.eks. Stylus for Chrome: https://chrome.google.com/webstore/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo
@@ -9,10 +14,16 @@
 
     CHANGELOG
     v1.1: fiks usynlige inputsiffer i "Korrigere"-visning
+
     */
+
+    /* Bort med pulserende notification: */
     .pulse {
         animation-name: none;
     }
+
+
+    /* Regeneark-style på fordelingstabellen*/
     .cellWeek {
         padding: 0 !important;
     }
@@ -52,9 +63,13 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+    /* Flat, indre markering af fokusert celle */
     .riFocused {
         box-shadow: inset 0 0 0 2px rgba(200, 200, 256, 0.75) !important;
     }
+
+    /* Vort med unødvendig whitespace i bunn */
     .footer {
         min-height: 0;
         margin: 0;
