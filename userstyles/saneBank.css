@@ -1,6 +1,14 @@
 @-moz-document url-prefix("http://tidbank/") {
     /*
 
+    saneBank.css
+    Et stilark for tidBank som får hele fordelingsbildet inn på en normal skjerm, og generelt svir litt mindre i øya
+
+    INSTALL
+    Bruk f.eks. Stylus for Chrome: https://chrome.google.com/webstore/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo
+    -og velg "Manage", "Write new style" og "Mozilla Format/import".
+
+    CHANGELOG
     v1.1: fiks usynlige inputsiffer i "Korrigere"-visning
 
     */
