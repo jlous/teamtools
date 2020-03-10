@@ -1,6 +1,5 @@
 @-moz-document url-prefix("http://tidbank/") {
     /*
-
     saneBank.css
     Et stilark for tidBank som får hele fordelingsbildet inn på en normal skjerm, og generelt svir litt mindre i øya
 
@@ -10,7 +9,6 @@
 
     CHANGELOG
     v1.1: fiks usynlige inputsiffer i "Korrigere"-visning
-
     */
     .pulse {
         animation-name: none;
