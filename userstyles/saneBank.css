@@ -1,11 +1,16 @@
 @-moz-document url-prefix("http://tidbank/") {
-    .pulse { animation-name: none;}
+    /*
+
+    v1.1: fiks usynlige inputsiffer i "Korrigere"-visning
+
+    */
+    .pulse {
+        animation-name: none;
+    }
     .cellWeek {
         padding: 0 !important;
-
     }
-    .rgMasterTable{
-
+    .rgMasterTable {
         min-width: 0 !important;
     }
     .rgMasterTable tr {
@@ -18,31 +23,33 @@
     .rgMasterTable .orangeBack1 .cellWeek {
         padding-right: 0 !important;
     }
-    .rgMasterTable input.riTextBox{
-        border:none !important;
+    .rgMasterTable .cellWeek input.riTextBox {
+        border: none !important;
         border-radius: 0;
         padding-right: 0.5ex !important;
         padding-left: 0 !important;
         text-align: right !important;
     }
     .rgMasterTable .rcbInner {
-        border:none !important;
+        border: none !important;
         border-radius: 0 !important;
         box-shadow: none !important;
     }
-    .rcbInner, .rcbActionButton, .riTextBox {
+    .rcbInner,
+    .rcbActionButton,
+    .riTextBox {
         padding-bottom: 1px !important;
     }
     .rgMasterTable button {
-        border:none !important;
+        border: none !important;
         border-radius: 0 !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .riFocused{
-        box-shadow: inset 0px 0px 0px 2px rgba(200,200,256,0.75) !important;
+    .riFocused {
+        box-shadow: inset 0 0 0 2px rgba(200, 200, 256, 0.75) !important;
     }
-    .footer{
+    .footer {
         min-height: 0;
         margin: 0;
     }
